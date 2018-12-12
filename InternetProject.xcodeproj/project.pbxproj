@@ -97,12 +97,10 @@
 		0FF8E85F21C1AC1400015829 /* InternetProject */ = {
 			isa = PBXGroup;
 			children = (
-				0FF8E86021C1AC1400015829 /* AppDelegate.swift */,
+				0FF8E88E21C1AC3000015829 /* Resources */,
 				0FF8E86221C1AC1400015829 /* ViewController.swift */,
 				0FF8E86421C1AC1400015829 /* Main.storyboard */,
-				0FF8E86721C1AC1600015829 /* Assets.xcassets */,
 				0FF8E86921C1AC1600015829 /* LaunchScreen.storyboard */,
-				0FF8E86C21C1AC1600015829 /* Info.plist */,
 			);
 			path = InternetProject;
 			sourceTree = "<group>";
@@ -123,6 +121,16 @@
 				0FF8E88221C1AC1700015829 /* Info.plist */,
 			);
 			path = InternetProjectUITests;
+			sourceTree = "<group>";
+		};
+		0FF8E88E21C1AC3000015829 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FF8E86021C1AC1400015829 /* AppDelegate.swift */,
+				0FF8E86721C1AC1600015829 /* Assets.xcassets */,
+				0FF8E86C21C1AC1600015829 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
