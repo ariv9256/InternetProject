@@ -74,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FED5CEA21C436B4001128BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FF8E86421C1AC1400015829 /* Main.storyboard */,
+				0FF8E86921C1AC1600015829 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FED5CEB21C436B9001128BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FF8E86221C1AC1400015829 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0FF8E85421C1AC1400015829 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				0FF8E88E21C1AC3000015829 /* Resources */,
-				0FF8E86221C1AC1400015829 /* ViewController.swift */,
-				0FF8E86421C1AC1400015829 /* Main.storyboard */,
-				0FF8E86921C1AC1600015829 /* LaunchScreen.storyboard */,
+				0FED5CEB21C436B9001128BE /* Controller */,
+				0FED5CEA21C436B4001128BE /* View */,
 			);
 			path = InternetProject;
 			sourceTree = "<group>";
