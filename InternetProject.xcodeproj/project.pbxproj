@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FED5CED21C43DAA001128BE /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED5CEC21C43DAA001128BE /* InternetDetailViewController.swift */; };
+		0FED5CEF21C44565001128BE /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED5CEE21C44565001128BE /* InternetMasterViewController.swift */; };
 		0FF8E86121C1AC1400015829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8E86021C1AC1400015829 /* AppDelegate.swift */; };
 		0FF8E86621C1AC1400015829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8E86421C1AC1400015829 /* Main.storyboard */; };
 		0FF8E86821C1AC1600015829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8E86721C1AC1600015829 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0FED5CEC21C43DAA001128BE /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		0FED5CEE21C44565001128BE /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		0FF8E85D21C1AC1400015829 /* InternetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF8E86021C1AC1400015829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF8E86521C1AC1400015829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				0FED5CEC21C43DAA001128BE /* InternetDetailViewController.swift */,
+				0FED5CEE21C44565001128BE /* InternetMasterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FED5CED21C43DAA001128BE /* InternetDetailViewController.swift in Sources */,
+				0FED5CEF21C44565001128BE /* InternetMasterViewController.swift in Sources */,
 				0FF8E86121C1AC1400015829 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
