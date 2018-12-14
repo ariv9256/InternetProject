@@ -33,16 +33,25 @@ class InternetMasterViewController: UITableViewController
             "https://canyons.instructure.com",
             "https://ctec.canyonsdistrict.org/"
         ]
+        if let splitView = splitViewController
+        {
+            let currentControllers = splitView.viewControllers
+            internetDetail = currentControllers[0] as? InternetDetailViewController
+        }
     }
-
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
+        setupDetailContents()
+        self.clearsSelectionOnViewWillAppear = false
+        
+        if let split = splitViewController
+        {
+            let controllers = split.viewControllers
+            internetDetail = (controllers[controllers.count-1] as! UINavigationController).topViewController as? InternetDetailViewController
+        }
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
