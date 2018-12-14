@@ -13,30 +13,24 @@ class InternetDetailViewController: UIViewController
 {
     
     @IBOutlet weak var webViewer: WKWebView!
-    @IBOutlet weak var screenTitle: UILable!
+    @IBOutlet weak var screenTitle: UILabel!
     
     var detailTitle: String?
-    {
-        didSet
-        {
-                updateView()
-        }
-    }
-    
-    var detialAddress : String?
     {
         didSet
         {
             updateView()
         }
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    var detailAddress : String?
+    {
+        didSet
+        {
+            updateView()
+        }
     }
-    private func udpateView() -> Void
+    private func updateView() -> Void
     {
         if (detailTitle != nil && screenTitle != nil && webViewer != nil)
         {
@@ -46,9 +40,9 @@ class InternetDetailViewController: UIViewController
             }
             else
             {
-                if(detialAddress != nil)
+                if(detailAddress != nil)
                 {
-                    loadURL(webAdress: detailAddress!)
+                    loadURL(webAddress : detailAddress!)
                 }
             }
             screenTitle?.text = detailTitle
@@ -58,7 +52,7 @@ class InternetDetailViewController: UIViewController
     {
         super.viewDidLoad()
         
-        udpateView()
+        updateView()
     }
     
     private func loadURL(webAddress: String) -> Void
@@ -72,7 +66,7 @@ class InternetDetailViewController: UIViewController
     {
         if let contentPDF = Bundle.main.url(forResource: "networking internet topics programming ", withExtension: "pdf", subdirectory: nil, localization: nil)
         {
-            let requestedPDF = NSURLRequst(url: contentPDF)
+            let requestedPDF = NSURLRequest(url: contentPDF)
             webViewer.load(requestedPDF as URLRequest)
         }
     }
